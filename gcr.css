@@ -1,0 +1,84 @@
+/* Reset default margin and padding */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #4285f4;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Main content styles */
+main {
+  padding: 1rem;
+}
+
+/* Classroom section styles */
+.classroom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Individual class card styles */
+.class {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+  width: calc(33.33% - 1rem);
+}
+
+/* Join button styles */
+.join-button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Login form styles */
+#loginForm {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+#loginForm label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#loginForm input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#loginForm button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}

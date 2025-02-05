@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="gcr.css">
+  <title>Google Classroom Example</title>
+</head>
+<body>
+  <header>
+    <h1>My Classroom</h1>
+  </header>
+  <main>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    margin: 0;
+    color: #333333;
+}
+
+.input-container {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.sign-in-button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sign-in-button:hover {
+    background-color: #357ae8;
+}
+
+.forgot-password,
+.create-account {
+    color: #666666;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #4285f4;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+        </style>
+    </head>
+    <body>
+      <div class="container">
+          <div class="login-box">
+              <h2>Sign in to GCR</h2>
+              <form id="loginForm" action="authenticate.php" method="post">
+                  <div class="input-container">
+                      <input type="text" id="email" placeholder="Email" required>
+                  </div>
+                  <div class="input-container">
+                      <input type="password" id="password" placeholder="Password" required>
+                  </div>
+                  <button type="submit" class="sign-in-button">Sign In</button>
+              </form>
+              <p class="forgot-password">Forgot password?</p>
+              <hr>
+              <p class="create-account">Don't have an account? <a href="#">Create one</a></p>
+          </div>
+      </div>
+      <script src="script.js">
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  // Replace this with your actual authentication logic
+  if (email === 'saura' && password === '123') {
+      alert('Authentication successful. Redirecting to GCR...');
+      window.location.href = 'MATH.html'; // Redirect to the GCR page
+  } else {
+      alert('Authentication failed. Please check your email and password.');
+  }
+});
+
+      </script>
+  </body>
+  </html>
+    
+
+    <section class="classroom">
+      <article class="class">
+        <h2>Transform & Boundary Principles</h2>
+        <p>This is the Mathematics class. Join us to learn interesting math concepts!</p>
+        <a href="MATH.html" class="join-button">join class</a>
+    </article>
+    <article class="class">
+        <h2>Design Thinking & Methodology</h2>
+        <p> this is a Design thinking and methodology class. join us to learn interesting design in engineering to add in computer Science concepts</p>
+        <a href="DTM.html" class="join-button">Join class</a>
+    </article>
+      <article class="class">
+        <h2>COA</h2>
+        <p>Explore the wonders of Computer Architecture in this class. Join now to start your Architecture journey.</p>
+        <a href="COA.html" class="join-button">join class</a>
+      </article>
+      <article class="class">
+        <h2>Proffesional ethics</h2>
+        <p>here we will learn about different ways of communicating and speaking</p>
+        <a href="pe.html" class="join-button">Join class</a>
+      </article>
+      <article class="class">
+        <h2>Verbal reasoning</h2>
+        <p>different statement for placement purpose</p>
+        <a href="vr.html" class="join-button">join class</a>
+      </article>
+      <article class="class">
+        <h2>DSA</h2>
+        <p> this is DSA class. join us to learn interesting DSA concepts</p>
+        <a href="DSA.html" class="join-button">Join class</a>
+    </article>
+      <article class="class">
+        <h2>Operating System</h2>
+        <p>learn about operating system and application.</p>
+        <a href="OS.html" class="join-button">Join Class</a>
+       
+      </article>
+      <article class="class">
+        <h2>Advance programming practice</h2>
+        <p>Advance programming in JAVA.</p>
+        <a href="app.html" class="join-button">Join Class</a>
+       
+      </article>
+    </section>
+
+    <div class="deadlines">
+
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 My Classroom. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function authenticateAndAccessGCR() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      // Perform an AJAX request to the server for authentication.
+      // For this example, we'll assume authentication is successful.
+      // In a real application, you'd have a more secure authentication mechanism.
+      fetch('/login', {
+        method: 'POST',
+        credentials: 'include',
+        body: JSON.stringify({ username, password }),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+        .then(response => {
+          if (response.ok) {
+            // Redirect to the GCR page on success.
+            window.location.href = '/gcr';
+          } else {
+            alert('Authentication failed');
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    }
+  </script>
+</body>
+</html>

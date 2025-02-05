@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <style>
+    /* Styles for the classroom interface */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+.lesson {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem;
+}
+/* Your existing CSS styles here */
+
+.timetable {
+  margin-top: 2rem;
+}
+
+.timetable h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+table th, table td {
+  padding: 0.5rem;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+/* Styles for the assignment form */
+/* Styles for the assignment form */
+form {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background-color: yellowgreen;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+input[type="submit"] {
+  margin-top: 0.5rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+
+/* Additional styles as needed */
+
+  </style>
+  <title>Operating System classroom</title>
+</head>
+<body>
+  <header>
+    <h1>21CSC202J</h1>
+    <h1>Operating System Classroom</h1>
+    <p>Teacher:Dr.R.Subash (101616)</p>
+  </header>
+  <main>
+    <section class="lesson">
+      <h2>Lesson 1: INTRODUCTION TO basic LINUX commands and installing UNBUNTU 2022</h2>
+      <p>ntroduction, Computer-System Organization, Computer-System Architecture, Operating-System Structure, Operating-System Operations, Process Management, Memory Management, Storage Management, Protection and
+        Security, Kernel Data Structures, Computing Environments, Open-Source Operating Systems, Operating-System Services, User and Operating-System Interface, System Calls, Types of System Calls, System Programs,
+        Operating-System Design and Implementation, Operating-System Structure, Operating-System Debugging, Operating-System Generation, System Boot</p>
+        <h3>Lab 1: Operating system Installation, Basic Linux commands</h3>
+        <h3>Lab 2: Process Creation using fork() and Usage of getpid(), getppid(), wait() functions</h3>
+        <p>write a program using C Language</p>
+  <form action="/submit_assignment" method="post" enctype="multipart/form-data">
+    <label for="assignment_code">Your C Code:</label><br>
+    <textarea id="assignment_code" name="assignment_code" rows="6" cols="50"></textarea><br>
+    
+    <label for="assignment_file">Upload Assignment File:</label><br>
+    <input type="file" id="assignment_file" name="assignment_file"><br>
+    
+    <input type="submit" value="Submit Assignment">
+  </form>
+    </section>
+    <section class="lesson">
+      <h2>Lesson 2: Process Management</h2>
+      <p>PROCESS MANAGEMENT: Process Concept, Process Scheduling, Operations on Processes, Interprocess Communication, Communication in Client– Server Systems, Threads: Multicore Programming, Multithreading Models,
+        Thread Libraries, Implicit Threading, Threading Issues. Process Synchronization: The Critical-Section Problem, Peterson’s Solution, Synchronization Hardware, Mutex Locks, Semaphores, Classic Problems of Synchronization,
+        Monitors</p>
+      <a href="hfile:///C:/Users/saura/Downloads/reema%20thareja%20dsa.pdf "class="Lecture_Notes">Lecture_Notes</a>
+      <h3>Lab 3: Multithreading</h3>
+<h3>Lab 4: Mutual Exclusion using semaphore and monitor</h3>
+<h3>Lab 5: Reader-Writer problem</h3>
+<h3>Lab 6: Dining Philosopher problem</h3>
+<p>write a program using C language on given questions</p>
+  <form action="/submit_assignment" method="post" enctype="multipart/form-data">
+    <label for="assignment_code">Your Java Code:</label><br>
+    <textarea id="assignment_code" name="assignment_code" rows="6" cols="50"></textarea><br>
+    
+    <label for="assignment_file">Upload Assignment File:</label><br>
+    <input type="file" id="assignment_file" name="assignment_file"><br>
+    
+    <input type="submit" value="Submit Assignment">
+  </form>
+      <h2>Lesson 3:CPU Scheduling</h2>
+      <p>CPU Scheduling: Basic Concepts, Scheduling Criteria, Scheduling Algorithms, Thread Scheduling, Multiple-Processor Scheduling, Real-Time CPU Scheduling. Deadlocks: System Model, Deadlock Characterization, Methods for
+        Handling Deadlocks, Deadlock Prevention, Deadlock Avoidance, Deadlock Detection, Recovery from Deadlock<h3>Assignment:not assigned</h3>
+        <h3>Lab 7:  Bankers Algorithm for Deadlock avoidance</h3>
+        <h3>Lab 8: FCFS and SJF Scheduling</h3>
+        <h3>Lab 9: Priority and Round robin scheduling</h3>
+        <h3>Lab 10: FIFO Page Replacement Algorithm</h3>
+        <p>Complete the questions on CPU Scheduling</p>
+    <form action="/submit_assignment" method="post" enctype="multipart/form-data">
+      <label for="assignment_code">Your Java Code:</label><br>
+      <textarea id="assignment_code" name="assignment_code" rows="6" cols="50"></textarea><br>
+      
+      <label for="assignment_file">Upload Assignment File:</label><br>
+      <input type="file" id="assignment_file" name="assignment_file"><br>
+      
+      <input type="submit" value="Submit Assignment">
+    </form>
+        <h2>Lesson 4:Memory Management</h2>
+      <p>MEMORY MANAGEMENT: Main Memory, Swapping, Contiguous Memory Allocation, Segmentation, Paging, Structure of the Page Table. Virtual Memory: Introduction, Demand Paging, Copy-on-Write, Page Replacement,
+        Allocation of Frames, Thrashing, Memory-Mapped Files, Allocating Kernel Memory. STORAGE MANAGEMENT: Disk Structure, Disk Attachment, Disk Scheduling, Disk Management, Swap-Space Management, RAID Structure.
+        File-System Interface: File Concept, Access Methods, Directory and Disk Structure, File-System Mounting, File Sharing, Protection<a href="file:///C:/Users/saura/Downloads/Unit%202%20-%20Java.pdf" class="Lecture_Notes">Lecture_Notes</a>
+      <h3>Lab 11: LRU and LFU Page Replacement Algorithm</h3>
+        ?<h3>Lab 12: Best fit and Worst fit memory management policies</h3>
+        <h3>Lab 13: Disk Scheduling algorithm</h3>
+      <p>Complete this programs on memory management </p>
+  <form action="/submit_assignment" method="post" enctype="multipart/form-data">
+    <label for="assignment_code">Your Java Code:</label><br>
+    <textarea id="assignment_code" name="assignment_code" rows="6" cols="50"></textarea><br>
+    
+    <label for="assignment_file">Upload Assignment File:</label><br>
+    <input type="file" id="assignment_file" name="assignment_file"><br>
+    
+    <input type="submit" value="Submit Assignment">
+  </form>  
+      <h2>Lesson 5: Protection Security</h2>
+      <p> PROTECTION AND SECURITY: Goals of Protection, Principles of Protection, Domain of Protection, Access Matrix, Implementation of the Access Matrix, Access Control, Revocation of Access Rights, Capability-Based Systems,
+        Language-Based Protection, The Security Problem, Program Threats, System and Network Threats, Cryptography as a Security Tool, User Authentication, Implementing Security Defenses, Firewalling to Protect Systems andNetworks, Computer-SecurityClassifications of Protection Security:
+        <h3>Lab 14: Sequential and Indexed file Allocation</h3>
+          <h3>Lab 15: File organization schemes for single level and two level directory</h3>
+          <p>Complete the task of the protection Security</p>
+      <form action="/submit_assignment" method="post" enctype="multipart/form-data">
+          <label for="assignment_code">Your Java Code:</label><br>
+          <textarea id="assignment_code" name="assignment_code" rows="6" cols="50"></textarea><br>
+           
+    <label for="assignment_file">Upload Assignment File:</label><br>
+    <input type="file" id="assignment_file" name="assignment_file"><br>
+    <input type="submit" value="Submit Assignment">
+    </section>
+    <!-- Add more lesson sections as needed -->
+    <section class="timetable">
+        <h2>Class Timetable</h2>
+        <table>
+          <tr>
+            <th>DayOrder</th>
+            <th>Time</th>
+            <th>Topic</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>09:45 AM - 11:30 AM</td><!----->
+            <td>Lesson for unit 1,2</td>
+            <td>Basic discussion on upcoming LAB for batch 1</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td> 10:40 AM - 11:30 AM</td>
+            <td>Other Concepts of Operating System</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>01:25 PM - 03:10 PM</td>
+            <td>operating system lab for batch 1</td>
+            </tr>
+            <tr>
+            <td>3</td>
+            <td>1:25 pm - 03:10 pm</td>
+            <td>Operating System lab for btch 2</td>
+          </tr>
+        </table>
+      </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Operating System Classroom All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
